@@ -1,7 +1,7 @@
 <?php
 //Task 1: Looping with Increment using a Function
 //For loop
-echo "=============For Loop=============\n";
+echo "=============Task 1: For Loop=============\n";
 function evenNumbersForLoop($start, $end, $step) {
     
     if($start % 2 !== 0){
@@ -17,7 +17,7 @@ evenNumbersForLoop(1, 20, 2);
 
 
 //While loop
-echo "\n\n=============While Loop=============\n";
+echo "\n\n=============Task 1: While Loop=============\n";
 function evenNumbersWhileLoop($start, $end, $step) {
     
     if($start % 2 !== 0){
@@ -35,7 +35,7 @@ function evenNumbersWhileLoop($start, $end, $step) {
 evenNumbersWhileLoop(1, 20, 2);
 
 //Do While loop
-echo "\n\n=============Do While Loop=============\n";
+echo "\n\n=============Task1: Do While Loop=============\n";
 function evenNumbersDoWhileLoop($start, $end, $step) {
     
     if($start % 2 !== 0){
@@ -68,4 +68,25 @@ function skipFiveMultiple($start, $end, $skip){
 }
 
 skipFiveMultiple(1, 50, 5);
-echo "\n";
+
+//Task 3: Break on Condition
+echo "\n\n=============Task 3=============\n";
+
+$limit = 10;
+$a = 0;
+$b = 1;
+
+for ($i = 0; $i < $limit; $i++) {
+    
+    $next = $a + $b;
+    
+    if ($next > 100) {
+        break; // Break out of the loop
+    }
+
+    echo $next . " ";
+
+    $a = $b;
+    $b = $next;
+}
+
